@@ -9,9 +9,9 @@ function App() {
 
   return (
     <div>
-      <input defaultValue={number1} />
+      <input defaultValue={number1} onChange={e => setNumber1(e.target.value)} />
       <span>+</span>
-      <input defaultValue={number2} />
+      <input defaultValue={number2} onChange={e => setNumber2(e.target.value)} />
 
       <span>=</span>
       <span>{number1 + number2}</span>
