@@ -14,7 +14,7 @@ function App() {
       <input defaultValue={number2} onChange={e => setNumber2(e.target.value)} />
 
       <span>=</span>
-      <span>{number1 + number2}</span>
+      <span>{parseInt(number1) + parseInt(number2)}</span>
     </div>
   );
 }
